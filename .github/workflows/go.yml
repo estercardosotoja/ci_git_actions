@@ -28,7 +28,7 @@ jobs:
       run: docker-compose up -d
 
     - name: Test
-      run: go test -v main-test.go
+      run: go test -v main_test.go
       
   build:
     needs: test
