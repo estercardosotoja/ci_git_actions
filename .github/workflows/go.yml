@@ -10,7 +10,6 @@ on:
     branches: [ "*" ]
 
 jobs:
-
   test:
     runs-on: ${{ matrix.os }}
     strategy:
@@ -33,7 +32,7 @@ jobs:
 
     - name: Test
       run: go test -v main_test.go
-      
+
   build:
     needs: test
     runs-on: ${{ matrix.os }}
