@@ -6,7 +6,19 @@ on:
 jobs:
   docker:
     runs-on: ubuntu-latest
-    
+
+  test:
+    runs-on: ${{ matrix.os }}
+    env:
+      HOST: localhost
+      PORT: 5432
+      USER: root
+      PASSWORD: root
+      DBNAME: root
+    strategy:
+      matrix:
+        go_version: ['1.20', '1.19', '>=1.20']
+
     steps:
     - uses: actions/checkout@v3
 
