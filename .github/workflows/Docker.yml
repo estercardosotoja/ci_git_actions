@@ -27,4 +27,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: etgt/go_ci:${{github.ref_name}}
+        tags: etgt/ci_git_actions:${{github.ref_name}}
