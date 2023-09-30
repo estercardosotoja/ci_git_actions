@@ -2,7 +2,8 @@
 
 ## Objetivo
 
-O objetivo deste repositório é realizar o curso de Git Actions da Alura. 
+O objetivo deste repositório é realizar o curso de Git Actions da Alura.
+Este projeto é disponibilizado para realizar as práticas do curso. 
 
 ## Tecologia utilizada:
 
