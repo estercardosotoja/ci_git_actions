@@ -24,7 +24,7 @@ jobs:
           EXCLUDE: "postgres-data"
 
       - name: Executing remote ssh commando using password
-        uses: appleboy/shh-action@master
+        uses: easingthemes/ssh-deploy@v4.1.10
         with:
           host: ${{ secrets.REMOTE_HOST}}
           username: ${{ secrets.REMOTE_USER }}
